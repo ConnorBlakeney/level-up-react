@@ -8,6 +8,12 @@ export const ApplicationViews = () => {
             backgroundColor: "lightgoldenrodyellow"
         }}>
             Application views
+
+            <GameProvider>
+                <Route exact path="/">
+                    <GameList />
+                </Route>
+            </GameProvider>
         </main>
     </>
 }
